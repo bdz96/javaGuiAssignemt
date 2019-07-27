@@ -158,15 +158,23 @@ public class FirstFrameS extends javax.swing.JFrame {
     
     
     private void startButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startButtonActionPerformed
-    
+        
+        
+        
         Timer timer = new Timer(1000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
-               System.out.print("clkick event");
+                
+               // trebas znati da li je ekran u boji ili nije
+               // imat neki boolean koji cuva da li je u boji ili nije
+               
+               // na osnovu boolean value-a, znam hocu li setat default ili user boju
+               
+               // kad setas boju -> boolean value se mijenja
             }
         });
         
-        timer.setDelay(3000);
+        timer.setDelay(4000);
         timer.start();
     }//GEN-LAST:event_startButtonActionPerformed
 
